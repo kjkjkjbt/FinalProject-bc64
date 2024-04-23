@@ -24,31 +24,27 @@
 
 // export default App;
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Button } from 'antd';
+// import { Button } from 'antd';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AuthTemplate from './templates/AuthTemplate';
-import LoginPage from './pages/loginPage/LoginPage';
-import { useEffect } from 'react';
-import { userSer } from './service/userSer';
-import HomeTemplate from './templates/HomeTemplate';
-import HomePage from './pages/HomePage/HomePage';
-import DetailPage from './pages/DetailPage/DetailPage';
-import ScreenPage from './pages/ScreenPage/ScreenPage';
-import Loading from './components/Loading/Loading';
-import CheckUser from './HOC/CheckUser';
-import SignupPage from './pages/signupPage/SignupPage';
+import AuthTemplate from './Template/Autemplate';
+import SigninPage from './Component/pages/SigninPage/SigninPage';
+import SignupPage from './Component/pages/SignupPage/SignupPage'
+
+
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      <Loading />
+      {/* <Loading /> */}
       <Routes>
-        {/* home template */}
+        {/* home template
         <Route path="" element={<HomeTemplate />}>
-          <Route index element={<HomePage />} />
-          <Route
+          <Route index element={<HomePage />} /> */}
+          {/* <Route
             path="screen/:MaPhong"
             element={
               <CheckUser>
@@ -56,11 +52,11 @@ function App() {
               </CheckUser>
             }
           />
-        </Route>
+        </Route> */}
         {/* auth template */}
         <Route path="/auth" element={<AuthTemplate />}>
-          <Route path="signin" element={<LoginPage />} />
-          <Route path='signup' element ={<SignupPage />} />
+          <Route path="signin" element={<SigninPage />} />
+          <Route path='signup' element ={<SignupPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

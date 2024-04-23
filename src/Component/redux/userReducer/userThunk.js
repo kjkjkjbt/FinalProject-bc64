@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { userSer } from '../../service/userSer';
 import { message } from 'antd';
 
-export const loginThunk = createAsyncThunk(
+export const loginThunk= createAsyncThunk(
   'userReducer/loginThunk',
   async (payload, { rejectWithValue }) => {
     try {
