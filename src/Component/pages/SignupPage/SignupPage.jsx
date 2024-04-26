@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useFormik } from 'formik';
 import React from 'react';
 import * as yup from 'yup';
-import { userSer } from '../../service/userSer';
+import { userSer } from '../../../service/userSer';
 import { useDispatch } from 'react-redux';
 import { signupThunk } from '../../redux/userReducer/userThunk';
 import { useNavigate } from 'react-router-dom';

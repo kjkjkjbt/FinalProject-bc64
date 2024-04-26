@@ -8,7 +8,7 @@ const Loading = () => {
   const { isLoading } = useSelector((state) => state.loadingReducer);
   return (
     <div
-      className={`w-screen h-screen fixed text-white bg-black ${
+      className={`w-screen h-screen fixed text-white bg-blue-250 ${
         isLoading ? '' : 'hidden'
       } top-0 left-0 z-50`}
     >

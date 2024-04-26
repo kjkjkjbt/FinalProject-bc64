@@ -9,14 +9,14 @@ const Signout = () => {
         onClick={() => {
           navigate('/auth/signin');
         }}
-        className="bg-blue-600 text-white p-2 rounded"
+        className="bg-blue-200 text-white p-2 rounded"
       >
         Sign In 
       </button>
       <button onClick={()=>{
         navigate ('/auth/signup')
       }} 
-      className="bg-green-600 text-white p-2 rounded"> Sign Up </button>
+      className="bg-green-200 text-white p-2 rounded"> Sign Up </button>
     </div>
   );
 };
