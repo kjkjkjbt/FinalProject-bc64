@@ -37,11 +37,11 @@ const SignupPage = () => {
       id: yup
         .string()
         .required('cannot be blank')
-        .min(4, 'at least 4 letters'),
+        .min(4, 'at least 4 characters'),
       password: yup
         .string()
         .required('cannot be blank')
-        .min(3, 'at least 3 letters'),
+        .min(3, 'at least 3 characters'),
     }),
   });
   return (
