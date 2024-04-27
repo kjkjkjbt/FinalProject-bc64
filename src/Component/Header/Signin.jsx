@@ -7,14 +7,14 @@ const Signin = () => {
   const { infoUser } = useSelector((state) => state.userReducer);
   return (
     <div className="space-x-3">
-      <span className="text-white text-xl">{infoUser.hoTen}</span>
+      <span className="text-white text-xl">{infoUser.name}</span>
       <button
         onClick={() => {
           dispatch(logOutAction());
         }}
         className="bg-red-400 text-white p-2 rounded"
       >
-        Log out
+        Sign Out 
       </button>
     </div>
   );

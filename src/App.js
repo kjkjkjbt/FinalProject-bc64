@@ -31,6 +31,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AuthTemplate from './Template/Autemplate';
 import SigninPage from './Component/pages/SigninPage/SigninPage';
 import SignupPage from './Component/pages/SignupPage/SignupPage'
+import LoadingSlice from './Component/redux/loadingReducer/loadingSlice';
+import Loading from './Component/Loading/Loading';
 
 
 
@@ -39,7 +41,9 @@ import SignupPage from './Component/pages/SignupPage/SignupPage'
 function App() {
   return (
     <BrowserRouter>
-      {/* <Loading /> */}
+      { <LoadingSlice />}
+      {<Loading />}
+      
       <Routes>
         {/* home template
         <Route path="" element={<HomeTemplate />}>

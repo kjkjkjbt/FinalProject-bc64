@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { store } from '../redux/store';
+import { store } from '../Component/redux/store';
 import {
   turnOffLoading,
   turnOnLoading,
-} from '../redux/loadingReducer/loadingSlice';
+} from '../Component/redux/loadingReducer/loadingSlice';
 
 export const BASE_URL = 'https://airbnbnew.cybersoft.edu.vn';
 export const TOKEN_CYBER =

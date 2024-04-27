@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { loginThunk } from './userThunk';
-import { userLocal } from '../../redux/userReducer/userThunk';
+import { loginThunk } from '../userReducer/userThunk';
+import { userLocal  } from '../../../service/userLocal';
+
 // import { message } from 'antd';
 
 const initialState = {
