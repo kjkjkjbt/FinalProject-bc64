@@ -64,7 +64,7 @@ const SignupPage = () => {
             className="border rounded p-2 w-full"
             onChange={formSignup.handleChange}
           />
-          <p className="text-red-200 h-3">{formSignup.errors.name}</p>
+          <p className="text-red-500 h-3">{formSignup.errors.name}</p>
         </div>
         {/* mật khẩu  */}
         <div>
