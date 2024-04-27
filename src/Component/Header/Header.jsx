@@ -23,10 +23,10 @@ const Header = () => {
         <div classname="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div classname="flex justify-between h-16">
                 <div classname="flex">
-                    <a href="/" classname="flex-shrink-0 flex items-center">
+                    <NavLink to="/" classname="flex-shrink-0 flex items-center">
                         <img classname="block lg:hidden h-8 w-auto" src="https://www.airbnb.com.ar/static_assets/airbnb_logo-34bc4de6b9a55d08728acdd8d4db881c.png" alt="Airbnb" />
                         <img classname="hidden lg:block h-8 w-auto" src="https://www.airbnb.com.ar/static_assets/airbnb_logo-34bc4de6b9a55d08728acdd8d4db881c.png" alt="Airbnb" />
-                    </a>
+                    </NavLink>
                 </div>
                 <div classname="flex items-center">
                         <input type="text" placeholder="Where" classname="border border-gray-400 rounded-l py-2 px-4 focus:outline-none" />
