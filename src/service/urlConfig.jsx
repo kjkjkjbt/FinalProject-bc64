@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { store } from '../Component/redux/store';
+import {store } from '../../src/Component/redux/store'
 import {
   turnOffLoading,
   turnOnLoading,
@@ -21,7 +21,7 @@ export const http = axios.create({
 http.interceptors.request.use(
   function (config) {
     // Do something before request is sent
-    store.dispatch(turnOnLoading());
+    store.dispatch (turnOnLoading());
     // Bật loading khi bắt đầu gửi request
     return config;
   },

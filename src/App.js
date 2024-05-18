@@ -33,6 +33,9 @@ import SigninPage from './Component/pages/SigninPage/SigninPage';
 import SignupPage from './Component/pages/SignupPage/SignupPage'
 import LoadingSlice from './Component/redux/loadingReducer/loadingSlice';
 import Loading from './Component/Loading/Loading';
+import ListingPage from './Component/pages/ListingPage';
+import { PageNotFOund } from './Component/pages/PageNotFOund';
+import { CheckInOut } from './Component/CheckInOut/CheckInOut';
 
 
 
@@ -58,9 +61,12 @@ function App() {
           />
         </Route> */}
         {/* auth template */}
-        <Route path="/auth" element={<AuthTemplate />}>
-          <Route path="signin" element={<SigninPage />} />
-          <Route path='signup' element ={<SignupPage/>} />
+        <Route path="/auth"     element = {<AuthTemplate />}>
+          <Route path="/signin" element = {<SigninPage />} />
+          <Route path='/signup' element = {<SignupPage/>} />
+          <Route path='/list'   element = {<ListingPage />} />
+          <Route path='*'       element = {<PageNotFOund />} />
+          <Route path='/check-In-Out' element = {<CheckInOut />} /> 
         </Route>
       </Routes>
     </BrowserRouter>
