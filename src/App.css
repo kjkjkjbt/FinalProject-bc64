@@ -32,7 +32,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-login {
+  background: #f093fb;
+  background: -webkit-linear-gradient(to left, #f093fb, #f5576c);
+  background: linear-gradient(to left, #f093fb, #f5576c);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ant-picker {
+  padding: 0;
+}
+
+.ant-picker-dropdown {
+  z-index: 2000;
+}
+
+.ant-select-selector {
+  padding: 0 !important;
+}
+
+.ant-select-dropdown {
+  z-index: 2000;
+
 }
