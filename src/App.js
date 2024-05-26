@@ -25,33 +25,29 @@
 // export default App;
 
 // import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 // import { Button } from 'antd';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AuthTemplate from './Template/Autemplate';
-import SigninPage from './Component/pages/SigninPage/SigninPage';
-import SignupPage from './Component/pages/SignupPage/SignupPage'
-import LoadingSlice from './Component/redux/loadingReducer/loadingSlice';
-import Loading from './Component/Loading/Loading';
-import ListingPage from './Component/pages/ListingPage';
-import { PageNotFOund } from './Component/pages/PageNotFOund';
-import { CheckInOut } from './Component/CheckInOut/CheckInOut';
-
-
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AuthTemplate from "./Template/Autemplate";
+import SigninPage from "./Component/pages/SigninPage/SigninPage";
+import SignupPage from "./Component/pages/SignupPage/SignupPage";
+import LoadingSlice from "./Component/redux/loadingReducer/loadingSlice";
+import Loading from "./Component/Loading/Loading";
+import ListingPage from "./Component/pages/ListingPage";
+import { PageNotFOund } from "./Component/pages/PageNotFOund";
+import { CheckInOut } from "./Component/CheckInOut/CheckInOut";
 
 function App() {
   return (
     <BrowserRouter>
-      { <LoadingSlice />}
+      {<LoadingSlice />}
       {<Loading />}
-      
+
       <Routes>
         {/* home template
         <Route path="" element={<HomeTemplate />}>
           <Route index element={<HomePage />} /> */}
-          {/* <Route
+        {/* <Route
             path="screen/:MaPhong"
             element={
               <CheckUser>
@@ -61,12 +57,12 @@ function App() {
           />
         </Route> */}
         {/* auth template */}
-        <Route path="/auth"     element = {<AuthTemplate />}>
-          <Route path="/signin" element = {<SigninPage />} />
-          <Route path='/signup' element = {<SignupPage/>} />
-          <Route path='/list'   element = {<ListingPage />} />
-          <Route path='*'       element = {<PageNotFOund />} />
-          <Route path='/check-In-Out' element = {<CheckInOut />} /> 
+        <Route path="/auth" element={<AuthTemplate />}>
+          <Route path="/signin" element={<SigninPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/list123" element={<ListingPage />} />
+          <Route path="*" element={<PageNotFOund />} />
+          <Route path="/check-In-Out" element={<CheckInOut />} />
         </Route>
       </Routes>
     </BrowserRouter>
